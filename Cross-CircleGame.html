@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+font-family: "Roboto",Arial;
+margin:0 auto;
+text-align:center;
+margin-top:50px;
+color:#FFF;
+text-shadow:-1px -1px #333;
+background:#333;
+}
+h1 {
+    color: white;
+    font-family: verdana;
+    font-size: 300%;
+	background-color :red;
+}
+
+table {
+      border-collapse:collapse;
+	  width :150px;
+	  margin:0 auto;
+	  }
+td{
+width :50px;
+height:50px;
+border:1px solid #555;
+
+&.cross:before{
+content:"x";
+color:lightblue;
+}
+&.circle:before{
+content:"0";
+color:pink;
+}
+}
+.reset{
+background:#555;
+border:1px solid #333;
+padding:5px 10px;
+color:#FFF;
+font-family: "Roboto",Arial;
+text-transform:uppercase;
+&:hover{
+opacity:0.8;
+}
+}
+</style>
+
+<title>
+Cross_CircleGame 
+</title>
+ <h1>Let's Start Game </h1>
+<script src="Cross-CircleGame.js"></script>
+</head>
+<body>
+<table style="width:30%" id="tblgame">
+ 
+  <tr>
+  
+    <td><button id="btn00" type="button"  class="reset" onclick="displayVal(this.id);" value="Click Me" > Click Me </button> </td>
+    <td><button id="btn01" type="button"  class="reset" onclick="displayVal(this.id);" value="Click Me"> Click Me </button> </td>
+    <td><button id="btn02" type="button"  class="reset" onclick="displayVal(this.id);" value="Click Me"> Click Me</button></td>
+  
+  </tr>
+  <tr>
+  <td><button id="btn10" type="button"  class="reset" onclick="displayVal(this.id);" value="Click Me">Click Me</button></td>
+  <td><button id="btn11" type="button"  class="reset" onclick="displayVal(this.id);" value="Click Me">Click Me</button></td>
+  <td><button id="btn12" type="button"  class="reset" onclick="displayVal(this.id);" value="Click Me">Click Me </button></td>
+  </tr>
+  <tr>
+    <td><button id="btn20"   type="button"  class="reset"  onclick="displayVal(this.id);" value="Click Me">Click Me</button></td>
+    <td><button id="btn21"  type="button" class="reset" onclick="displayVal(this.id);" value="Click Me">Click Me</button></td>
+    <td><button id="btn22"  type="button" class="reset" onclick="displayVal(this.id);" value="Click Me">Click Me</button></td>
+  
+  </tr>
+  
+  <input type="button" value="Reset" onClick="document.location.reload(true)" class="reset"></button>
+  <p id="Navigate" ></p>
+  
+  
+</table>
+
+
+
+
+</body>
+</html>
